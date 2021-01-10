@@ -1,6 +1,8 @@
+/* Third party Imports */
 import axios, { AxiosResponse } from 'axios';
-import { Track, TrackResponse } from '../models/track';
 
+/* Local Imports */
+import { Track, TrackResponse } from '../models/track';
 import { randomLetter, randomMusicSelection } from '../utils/randomGenerator'
 
 async function searchMusic() {

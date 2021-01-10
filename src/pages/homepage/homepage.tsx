@@ -1,17 +1,20 @@
+/* React Imports */
 import React, { useState } from 'react'
 
+/* Third party Imports */
 import { Spinner } from 'reactstrap'
 
+/* Local Imports */
 import MusicInfo from '../../components/musicInfo/musicInfo'
+import { HomepageWrapper, ButtonWrapper, Button, Error, HeaderBrand } from './styles'
 import { searchMusic } from '../../services/api'
 import { Track } from '../../models/track'
 import { useLocalStorage } from '../../hooks/useLocalStorage'
-import { HomepageWrapper, ButtonWrapper, Button, Error, HeaderBrand } from './styles'
 
 const Homepage = () => {
-    const [track, setTrack] = useState<Track>();
-    const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string>();
+    const [loading, setLoading] = useState<boolean>(false);
+    const [track, setTrack] = useState<Track>();
     const [storedValue, setValue] = useLocalStorage('tracks', [1])
 
     const requestMusic = async () => {
