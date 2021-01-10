@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 
 import { Track } from '../../models/track'
-import {CardWrapper, TrackCard, ImageWrapper, TextWrapper, ButtonWrapper, Button, Link} from './styles'
+import {CardWrapper, TrackCard, ImageWrapper, TextWrapper, ButtonWrapper, Button, Link, Iframe} from './styles'
 
 interface Props {
     track: Track
