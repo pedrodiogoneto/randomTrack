@@ -30,7 +30,7 @@ const Homepage = () => {
 
     return (
         <HomepageWrapper>
-            <HeaderBrand>SHOWMESOMETHING</HeaderBrand>
+            <HeaderBrand>SOMETHINGNEW</HeaderBrand>
             {track && !error && <MusicInfo track={track}/>}
             <ButtonWrapper track={track?.trackId}>
                 {!loading && <Button onClick={requestMusic}>SHOW ME SOMETHING NEW</Button>}
